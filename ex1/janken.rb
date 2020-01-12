@@ -14,8 +14,7 @@ end
 class Enemy
   def hand
     # グー、チョキ、パーの値をランダムに出力するメソッドの処理をこの中に作成する
-    #enemy_hand = (0..2).to_a.shuffle.first.to_i
-    enemy_hand = 1
+    enemy_hand = (0..2).to_a.shuffle.first.to_i
     return enemy_hand
   end
 end
