@@ -1,0 +1,16 @@
+class School
+  def name=(word)
+    @school_name = word
+  end
+
+  def name1
+    puts @school_name
+  end
+end
+
+school = School.new
+
+puts school
+
+school.name=("A学校")
+school.name1
