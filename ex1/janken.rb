@@ -6,7 +6,12 @@ class Player
     puts "0: グー"
     puts "1: チョキ"
     puts "2: パー"
-    player_hand = gets.chomp.to_i
+    player_hand = gets.chomp
+
+    if nil != (player_hand =~ /\A[0-9]+\z/)
+      player_hand = player_hand.to_i
+    end
+
     return player_hand
   end
 end
